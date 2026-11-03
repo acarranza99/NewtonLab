@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Newton Lab: videojuego educativo sobre las tres leyes de Newton">
+    <title>Newton Lab | Laboratorio de Física</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">N</span>
+                <div>
+                    <h1>NEWTON LAB</h1>
+                    <p>LABORATORIO DE FÍSICA INTERACTIVO</p>
+                </div>
+            </div>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                SISTEMA EN LÍNEA
+            </div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="welcome">
+                <span class="eyebrow">CENTRO DE EXPERIMENTACIÓN</span>
+                <h2>Descubre las leyes<br>que mueven el universo.</h2>
+                <p>
+                    Experimenta con fuerzas, masas, movimientos y colisiones.
+                    Aprende física mientras juegas.
+                </p>
+                <button id="startButton" class="primary-button">
+                    EXPLORAR LAS TRES LEYES →
+                </button>
+            </section>
+
+            <section class="levels-section" id="levels">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">TU APRENDIZAJE</span>
+                        <h2>Selecciona un experimento</h2>
+                    </div>
+                    <span class="level-count">03 EXPERIMENTOS</span>
+                </div>
+
+                <div class="levels-grid">
+
+                    <article class="level-card">
+                        <div class="level-number">01</div>
+                        <div class="level-icon">◉</div>
+                        <span class="level-label">PRIMERA LEY</span>
+                        <h3>La inercia</h3>
+                        <p>Descubre por qué los objetos mantienen su estado de movimiento.</p>
+                        <button data-level="1" class="level-button">
+                            EXPLORAR →
+                        </button>
+                    </article>
+
+                    <article class="level-card">
+                        <div class="level-number">02</div>
+                        <div class="level-icon">↗</div>
+                        <span class="level-label">SEGUNDA LEY</span>
+                        <h3>Fuerza y aceleración</h3>
+                        <p>Experimenta cómo la masa y la fuerza determinan la aceleración.</p>
+                        <button data-level="2" class="level-button">
+                            EXPLORAR →
+                        </button>
+                    </article>
+
+                    <article class="level-card">
+                        <div class="level-number">03</div>
+                        <div class="level-icon">⇄</div>
+                        <span class="level-label">TERCERA LEY</span>
+                        <h3>Acción y reacción</h3>
+                        <p>Observa cómo interactúan dos cuerpos cuando ejercen fuerzas.</p>
+                        <button data-level="3" class="level-button">
+                            EXPLORAR →
+                        </button>
+                    </article>
+
+                </div>
+            </section>
+
+            <footer>
+                NEWTON LAB © 2026 · APRENDE EXPERIMENTANDO
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+
+    <script src="js/physics.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/secondLaw.js"></script>
+    <script src="js/thirdLaw.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
